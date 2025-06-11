@@ -204,7 +204,12 @@ namespace SquadBuilderNS
 
             if (ship.Instance.IconicPilots != null)
             {
-                image = AllPilots.Find(n => n.PilotTypeName == ship.Instance.IconicPilots[CurrentSquadList.SquadFaction].ToString()).Instance.ImageUrl;
+                var pilotName = ship.Instance.IconicPilots[CurrentSquadList.SquadFaction].ToString();
+                var pilot = AllPilots.Find(n => n.PilotTypeName == pilotName);
+                if (pilot == null)
+                    throw new Exception("Pilot " + pilotName + " not found in AllPilots");
+
+                image = pilot.Instance.ImageUrl;
             }
 
             return image;
