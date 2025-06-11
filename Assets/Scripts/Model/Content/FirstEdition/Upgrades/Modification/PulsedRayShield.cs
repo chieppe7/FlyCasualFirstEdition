@@ -22,7 +22,7 @@ namespace UpgradesList.FirstEdition
 
         public override bool IsAllowedForShip(GenericShip ship)
         {
-            return (ship.Faction == Faction.Rebel || ship.Faction == Faction.Scum) && ((ship.ShipInfo.Shields == 1));
+            return (ship.Faction == Faction.Rebel || ship.Faction == Faction.Scum) && (ship.ShipInfo.Shields == 1);
         }
 
         public override bool IsAllowedForSquadBuilderPostCheck(SquadList squadList)
@@ -80,42 +80,13 @@ namespace Abilities.FirstEdition
         private bool ShouldUseAbility()
         {
             bool result = false;
-            if (IsAlreadyIonized() || HasTurret()) result = true;
+            if (IsAlreadyIonized()) result = true;
             return result;
         }
 
         private bool IsAlreadyIonized()
         {
             return HostShip.Tokens.HasToken(typeof(IonToken));
-        }
-
-        private bool HasTurret()
-        {
-            // TODOREVERT
-
-            bool result = false;
-
-            /*if (HostShip.PrimaryWeapon.CanShootOutsideArc)
-            {
-                result = true;
-            }
-            else
-            {*/
-                foreach (GenericUpgrade upgrade in HostShip.UpgradeBar.GetUpgradesOnlyFaceup())
-                {
-                    IShipWeapon weapon = upgrade as IShipWeapon;
-                    if (weapon != null)
-                    {
-                        /*if (weapon.CanShootOutsideArc)
-                        {
-                            result = true;
-                            break;
-                        }*/
-                    }
-                }
-            //}
-
-            return result;
         }
 
         private void PulsedRayShieldConfirm(object sender, System.EventArgs e)

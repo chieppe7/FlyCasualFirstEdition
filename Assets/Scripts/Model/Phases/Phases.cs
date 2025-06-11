@@ -64,6 +64,7 @@ public static partial class Phases
         else
         {
             Debug.Log("OOPS! YOU WANT TO FINISH " + subPhaseType + " SUBPHASE, BUT NOW IS " + CurrentSubPhase.GetType() + " SUBPHASE!");
+            Next();
         }
     }
 

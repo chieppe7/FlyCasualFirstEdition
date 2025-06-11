@@ -868,6 +868,7 @@ namespace Ship
 
             foreach (GenericUpgrade upgrade in UpgradeBar.GetSpecialWeaponsActive())
             {
+                if(upgrade == null) continue;
                 allWeapons.Add(upgrade as IShipWeapon);
             }
 
