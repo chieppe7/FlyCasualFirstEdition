@@ -207,7 +207,7 @@ namespace SquadBuilderNS
             string image = null;
 
             if (ship.Instance.IconicPilots != null)
-            {
+            {   
                 var pilotName = ship.Instance.IconicPilots[CurrentSquadList.SquadFaction].ToString();
                 var pilot = AllPilots.Find(n => n.PilotTypeName == pilotName);
                 if (pilot == null)

@@ -9,7 +9,7 @@ namespace Ship
             public PoeDameronHotr() : base()
             {
                 PilotInfo = new PilotCardInfo(
-                    "Poe Dameron (HotR)",
+                    "Poe Dameron HotR",
                     9,
                     33,
                     isLimited: true,
