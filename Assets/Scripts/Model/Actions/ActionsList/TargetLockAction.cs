@@ -242,7 +242,7 @@ namespace SubPhases
 
         public override void Prepare()
         {
-            CanMeasureRangeBeforeSelection = false;
+            CanMeasureRangeBeforeSelection = (Edition.Current is Editions.SecondEdition);
 
             if (DescriptionShort == null) DescriptionShort = "Target Lock";
             if (DescriptionLong == null) DescriptionLong = "Choose a ship to acquire a target lock on it";

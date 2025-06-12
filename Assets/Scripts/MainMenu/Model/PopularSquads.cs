@@ -25,7 +25,14 @@ namespace SquadBuilderNS
         {
             ClearPage("BrowsePopularSquadsPanel");
 
-            Messages.ShowError("Only for Second Edition");
+            if (Edition.Current is Editions.SecondEdition)
+            {
+                Global.Instance.StartCoroutine(LoadPopularArchetypesAsync());
+            }
+            else
+            {
+                Messages.ShowError("Only for Second Edition");
+            }
         }
 
         private static void ClearPage(string pageName)

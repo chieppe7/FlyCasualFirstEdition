@@ -89,8 +89,17 @@ namespace RulesList
 
             hostShip.OnShipIsDestroyed += CheckForcedUndocking;
 
-            hostShip.OnMovementFinish += RegisterAskUndockFE;
-
+            // OLD
+            if (Editions.Edition.Current is Editions.SecondEdition)
+            {
+                hostShip.OnCheckSystemsAbilityActivation += CheckUndockAvailability;
+                hostShip.OnSystemsAbilityActivation += RegisterAskUndockSE;
+            }
+            else
+            {
+                hostShip.OnMovementFinish += RegisterAskUndockFE;
+            }
+            
         }
 
         private void CheckUndockAvailability(GenericShip ship, ref bool flag)
@@ -180,7 +189,15 @@ namespace RulesList
             dockedShip.CallUndocked(hostShip);
             hostShip.CallAnotherShipUndocked(dockedShip);
 
-            hostShip.OnMovementFinish -= RegisterAskUndockFE;
+            if (Editions.Edition.Current is Editions.SecondEdition)
+            {
+                hostShip.OnSystemsAbilityActivation -= RegisterAskUndockSE;
+                hostShip.OnCheckSystemsAbilityActivation -= CheckUndockAvailability;
+            }
+            else
+            {
+                hostShip.OnMovementFinish -= RegisterAskUndockFE;
+            }
 
             hostShip.OnShipIsDestroyed -= CheckForcedUndocking;
 
@@ -275,7 +292,14 @@ namespace RulesList
         {
             Selection.ChangeActiveShip("ShipId:" + docked.ShipId);
 
-            DirectionsMenu.Show(ShipMovementScript.SendAssignManeuverCommand, delegate { RegisterPerformManeuver(isEmergencyDeploy); });
+            if (Editions.Edition.Current is Editions.SecondEdition)
+            {
+                DirectionsMenu.Show(ShipMovementScript.SendAssignManeuverCommand, delegate { RegisterPerformManeuver(isEmergencyDeploy); }, FilterOnlyForward);
+            }
+            else
+            {
+                DirectionsMenu.Show(ShipMovementScript.SendAssignManeuverCommand, delegate { RegisterPerformManeuver(isEmergencyDeploy); });
+            }
         }
 
         private bool FilterOnlyForward(string maneuverCode)
@@ -328,7 +352,7 @@ namespace RulesList
 
         private void AfterUndockingManeuverIsFinished(bool isEmergencyDeploy)
         {
-            if (!(Selection.ThisShip.IsDestroyed))
+            if (!(Selection.ThisShip.IsDestroyed || (isEmergencyDeploy && Editions.Edition.Current is Editions.SecondEdition)))
             {
                 Triggers.RegisterTrigger(
                     new Trigger()

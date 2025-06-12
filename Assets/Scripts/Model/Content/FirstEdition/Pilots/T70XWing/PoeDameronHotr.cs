@@ -18,7 +18,6 @@ namespace Ship
                 );
 
                 ModelInfo.SkinName = "Black One";
-                PilotNameCanonical = Tools.Canonicalize(PilotInfo.PilotName) + "-hotr";
             }
         }
     }

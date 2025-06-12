@@ -37,7 +37,7 @@ public static partial class Roster {
     {
         GameObject prefab = (GameObject)Resources.Load("Prefabs/RosterPanel", typeof(GameObject));
 
-        int playerPanelNum = newShip.Owner.Id;
+        int playerPanelNum = (Network.IsNetworkGame && !Network.IsServer) ? AnotherPlayer(newShip.Owner.Id) : newShip.Owner.Id;
 
         GameObject newPanel = MonoBehaviour.Instantiate(prefab, GameObject.Find("UI/RostersHolder").transform.Find("TeamPlayer" + playerPanelNum).Find("RosterHolder").transform);
 
@@ -50,7 +50,7 @@ public static partial class Roster {
         newPanel.transform.Find("ShipInfo/ShipShieldsText").GetComponent<Text>().text = newShip.State.ShieldsMax.ToString();
 
         // ALT ShipId text
-        PlayerNo rosterPanelOwner = newShip.Owner.PlayerNo;
+        PlayerNo rosterPanelOwner = (Network.IsNetworkGame && !Network.IsServer) ? AnotherPlayer(newShip.Owner.PlayerNo) : newShip.Owner.PlayerNo;
         newPanel.transform.Find("ShipInfo/ShipId").GetComponent<Text>().text = newShip.ShipId.ToString();
         newPanel.transform.Find("ShipIdText/Text").GetComponent<Text>().text = newShip.ShipId.ToString();
         newPanel.transform.Find("ShipIdText/Text").GetComponent<Text>().color = (newShip.Owner.PlayerNo == PlayerNo.Player1) ? Color.green : Color.red;
@@ -265,7 +265,7 @@ public static partial class Roster {
         {
             Vector3 defaultPosition = GameObject.Find("UI/RostersHolder").transform.Find("TeamPlayer" + i + "/RosterHolder").transform.localPosition + new Vector3(5f, 0f, 0f);
 
-            int rosterPanelOwner = i;
+            int rosterPanelOwner = (Network.IsNetworkGame && !Network.IsServer) ? AnotherPlayer(i) : i;
             List<GameObject> rosterPlayer = (rosterPanelOwner == 1) ? rosterPlayer1 : rosterPlayer2;
 
             rosterPlayer = rosterPlayer
@@ -338,10 +338,21 @@ public static partial class Roster {
         {
             if (item.tag != "Untagged")
             {
-                if (AllShips[item.tag].Owner.PlayerNo == Phases.CurrentPhasePlayer && !(AllShips[item.tag].Owner is GenericAiPlayer))
+                if (!Network.IsNetworkGame)
                 {
-                    ToggleManeuverVisibility(AllShips[item.tag], true);
-                    return;
+                    if (AllShips[item.tag].Owner.PlayerNo == Phases.CurrentPhasePlayer && !(AllShips[item.tag].Owner is GenericAiPlayer))
+                    {
+                        ToggleManeuverVisibility(AllShips[item.tag], true);
+                        return;
+                    }
+                }
+                else
+                {
+                    if (AllShips[item.tag].Owner.GetType() == typeof(HumanPlayer))
+                    {
+                        ToggleManeuverVisibility(AllShips[item.tag], true);
+                        return;
+                    }
                 }
             }
         }
@@ -363,7 +374,7 @@ public static partial class Roster {
         bool result = true;
 
         if (GetPlayer(AnotherPlayer(ship.Owner.PlayerNo)).UsesHotacAiRules) return false;
-        //if (GetPlayer(AnotherPlayer(ship.Owner.PlayerNo)).GetType() == typeof(NetworkOpponentPlayer)) return false;
+        if (GetPlayer(AnotherPlayer(ship.Owner.PlayerNo)).GetType() == typeof(NetworkOpponentPlayer)) return false;
         if (Phases.CurrentSubPhase.GetType() == typeof(SubPhases.PlanningSubPhase)) return false;
         if (Phases.CurrentSubPhase.GetType() == typeof(SubPhases.MovementExecutionSubPhase)) return false;
 
@@ -688,7 +699,7 @@ public static partial class Roster {
         for (int i = 1; i < 3; i++)
         {
             GenericPlayer player = Roster.GetPlayer(i);
-            int playerInfoSlot = i;
+            int playerInfoSlot = (Network.IsNetworkGame && !Network.IsServer) ? Roster.AnotherPlayer(i) : i;
             player.PlayerInfoPanel = GameObject.Find("UI/PlayersPanel/Player" + playerInfoSlot + "Panel");
 
             player.PlayerInfoPanel.transform.Find("PlayerAvatarImage").GetComponent<AvatarFromUpgrade>().Initialize(Roster.GetPlayer(i).Avatar);

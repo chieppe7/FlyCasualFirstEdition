@@ -129,7 +129,7 @@ namespace Players
             else
             {
                 SubPhases.ObstaclesPlacementSubPhase.IsLocked = false;
-                UI.ShowSkipButton("Random");
+                if (!Network.IsNetworkGame) UI.ShowSkipButton("Random");
             }
         }
 

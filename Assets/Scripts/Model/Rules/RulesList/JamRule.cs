@@ -86,7 +86,7 @@ namespace RulesList
             Triggers.RegisterTrigger(new Trigger() {
                 Name = "Jammed!",
                 TriggerType = TriggerTypes.OnTokenIsAssigned,
-                TriggerOwner = ship.Owner.PlayerNo,
+                TriggerOwner = (Edition.Current is SecondEdition) ? jamToken.Assigner.PlayerNo: ship.Owner.PlayerNo,
                 EventHandler = delegate {
                     Selection.ActiveShip = ship;
                     newPhase.Start();
@@ -107,7 +107,7 @@ namespace SubPhases
         {
             DescriptionShort = "Jammed: Select a token to remove";
 
-            DecisionOwner = Selection.ActiveShip.Owner;
+            DecisionOwner = (Edition.Current is Editions.SecondEdition) ? Assigner : Selection.ActiveShip.Owner;
 
             List<System.Type> tokensTypesFound = new List<System.Type>();
 

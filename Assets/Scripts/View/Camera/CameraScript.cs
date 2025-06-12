@@ -137,7 +137,7 @@ public class CameraScript : MonoBehaviour {
 
     private static void SetDefaultCameraPosition()
     {
-        bool isSecondPlayer = false;
+        bool isSecondPlayer = (Network.IsNetworkGame && !Network.IsServer);
 
         Camera camera = Camera.GetComponent<Camera>();
         camera.orthographicSize = 6;

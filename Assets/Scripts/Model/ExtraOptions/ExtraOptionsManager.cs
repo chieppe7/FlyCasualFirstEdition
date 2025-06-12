@@ -28,7 +28,7 @@ namespace ExtraOptions
 
         protected bool IsAllowed()
         {
-            return true;
+            return IsAllowedOnline || (GameMode.CurrentGameMode.GetType() != typeof(NetworkGame));
         }
 
         protected abstract void Activate();

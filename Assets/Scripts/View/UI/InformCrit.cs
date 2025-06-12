@@ -104,9 +104,18 @@ public static class InformCrit
 
     public static void ConfirmCrit()
     {
-        HidePanel();
-        Phases.CurrentSubPhase.IsReadyForCommands = false;
-        Triggers.FinishTrigger();
+        if (Network.IsNetworkGame && !NetworkAnyPlayerConfirmedCrit)
+        {
+            NetworkAnyPlayerConfirmedCrit = true;
+
+            Phases.CurrentSubPhase.IsReadyForCommands = true;
+        }
+        else
+        {
+            HidePanel();
+            Phases.CurrentSubPhase.IsReadyForCommands = false;
+            Triggers.FinishTrigger();
+        }
     }
 
     public static void HidePanel()
