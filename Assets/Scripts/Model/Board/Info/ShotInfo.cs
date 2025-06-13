@@ -59,7 +59,6 @@ namespace BoardTools
         /// <param name="weapon">The weapon. If null, ship1's primary weapon will be used.</param>
         public ShotInfo(GenericShip ship1, GenericShip ship2, IShipWeapon weapon) : base(ship1, ship2)
         {
-            Debug.Log(ship1.PilotInfo.PilotName + ' ' + weapon.Name);
             Weapon = weapon ?? ship1.PrimaryWeapons.First();
 
             ShotAvailableFromArcs = new List<GenericArc>();

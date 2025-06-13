@@ -54,7 +54,6 @@ namespace Ship
             HostShip.CallUpdateWeaponRange(this, ref minRange, ref maxRange, targetShip);
 
             ShotInfo shotInfo = new ShotInfo(HostShip, targetShip, this);
-            UnityEngine.Debug.Log(this.Name +' '+ shotInfo.IsShotAvailable.ToString() + ' ' + shotInfo.Range);
             if (!shotInfo.IsShotAvailable) return false;
 
             if (shotInfo.Range < minRange) return false;
