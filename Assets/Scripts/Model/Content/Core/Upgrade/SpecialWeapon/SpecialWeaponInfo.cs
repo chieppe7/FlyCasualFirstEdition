@@ -60,7 +60,7 @@ namespace Upgrade
             AttackValue = attackValue;
             MinRange = minRange;
             MaxRange = maxRange;
-            RequiresTokens = (requiresToken != null) ? new List<Type>() { requiresToken } : (requiresTokens != null ? requiresTokens : new List<Type>());
+            RequiresTokens = (requiresToken != null) ? new List<Type>() { requiresToken } : requiresTokens;
             SpendsToken = spendsToken;
             Discard = discard;
             Charges = charges;
