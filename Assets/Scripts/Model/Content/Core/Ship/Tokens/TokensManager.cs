@@ -330,5 +330,9 @@ namespace Ship
             return token.TokenColor;
         }
 
+        internal bool HasToken(char v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

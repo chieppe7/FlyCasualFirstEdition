@@ -4,5 +4,5 @@
     Blank,
     Focus,
     Success,
-    Crit
+    Crit,
 }

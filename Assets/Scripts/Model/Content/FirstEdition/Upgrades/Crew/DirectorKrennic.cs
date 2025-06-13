@@ -229,26 +229,26 @@ namespace ActionsList
 
             if (Combat.DiceRollAttack.Blanks > 0)
             {
-                newSubPhase.AddDecision("Spend Blank", (s, o) => SpendBlankForEffect(DieSide.Blank));
+                newSubPhase.AddDecision("Spend Blank", (s, o) => SpendDieForEffect(DieSide.Blank));
             }
             if (Combat.DiceRollAttack.Focuses > 0)
             {
-                newSubPhase.AddDecision("Spend Eye", (s, o) => SpendBlankForEffect(DieSide.Focus));
+                newSubPhase.AddDecision("Spend Eye", (s, o) => SpendDieForEffect(DieSide.Focus));
             }
             if (Combat.DiceRollAttack.RegularSuccesses > 0)
             {
-                newSubPhase.AddDecision("Spend Hit", (s, o) => SpendBlankForEffect(DieSide.Success));
+                newSubPhase.AddDecision("Spend Hit", (s, o) => SpendDieForEffect(DieSide.Success));
             }
             if (Combat.DiceRollAttack.CriticalSuccesses > 0)
             {
-                newSubPhase.AddDecision("Spend Critical Hit", (s, o) => SpendBlankForEffect(DieSide.Crit));
+                newSubPhase.AddDecision("Spend Critical Hit", (s, o) => SpendDieForEffect(DieSide.Crit));
             }
 
             newSubPhase.DefaultDecisionName = newSubPhase.GetDecisions().Select(d => d.Name).FirstOrDefault();
             newSubPhase.Start();
         }
 
-        private void SpendBlankForEffect(DieSide side)
+        private void SpendDieForEffect(DieSide side)
         {
             Combat.DiceRollAttack.RemoveType(side);
             DefenderSuffersDamage();

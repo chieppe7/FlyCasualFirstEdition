@@ -387,7 +387,10 @@ public partial class DiceRoll
     public void RemoveAllFailures()
     {
         List<Die> diceCopy = new List<Die>(DiceList);
-        foreach (Die die in diceCopy) if (die.IsFailure) DiceList.Remove(die);
+        foreach (Die die in diceCopy) if (die.IsFailure) {
+            die.RemoveModel();
+            DiceList.Remove(die);
+        }
     }
 
     // Used to clean the diceboard before adding other dice [ Accuracy corrector ]
