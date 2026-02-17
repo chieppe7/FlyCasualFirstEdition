@@ -1,0 +1,291 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.49f1 (18249dd5551b) revision 1582237'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'en' Physical Memory: 32452 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.49f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/lchie/Desktop/FlyCasualFirstEdition
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53531
+Successfully changed project path to: C:/Users/lchie/Desktop/FlyCasualFirstEdition
+C:/Users/lchie/Desktop/FlyCasualFirstEdition
+Using Asset Import Pipeline V2.
+Player connection [3784] Host "[IP] 26.196.122.249 [Port] 2953007520 [Flags] 2 [Guid] 4110186051 [EditorId] 4110186051 [Version] 1048832 [Id] WindowsEditor(7,Alienware) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [3784] Host "[IP] 26.196.122.249 [Port] 2953007520 [Flags] 2 [Guid] 4110186051 [EditorId] 4110186051 [Version] 1048832 [Id] WindowsEditor(7,Alienware) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 63.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.49f1 (18249dd5551b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.49f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/lchie/Desktop/FlyCasualFirstEdition/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24e0)
+    Vendor:   
+    VRAM:     8018 MB
+    Driver:   32.0.15.8195
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.49f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.49f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.49f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.49f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001327 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 55.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.478 seconds
+Domain Reload Profiling:
+	ReloadAssembly (478ms)
+		BeginReloadAssembly (49ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (377ms)
+			LoadAssemblies (47ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (109ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (144ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (8ms)
+				ProcessInitializeOnLoadAttributes (59ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.787 seconds
+Domain Reload Profiling:
+	ReloadAssembly (788ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (651ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (209ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (287ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3251 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 118.1 MB.
+System memory in use after: 118.3 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 3675.
+Total: 5.075700 ms (FindLiveObjects: 0.170400 ms CreateObjectMapping: 0.081000 ms MarkObjects: 4.749700 ms  DeleteObjects: 0.073500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/AWing/SabineWren.cs
+  artifactKey: Guid(3a90e4d00aaa4c540ba3d05858936fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/AWing/SabineWren.cs using Guid(3a90e4d00aaa4c540ba3d05858936fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d47ea073666d7829298f2832ad95444') in 0.106729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/AWing/TychoCelchu.cs
+  artifactKey: Guid(6b13d34fd24b6a64e812c5f06b48cdbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/AWing/TychoCelchu.cs using Guid(6b13d34fd24b6a64e812c5f06b48cdbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7642274e76065618922ea74f566a3c7') in 0.018702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/AWing/ArvelCrynyd.cs
+  artifactKey: Guid(fb32c861f3a66f441b88827f04cf272c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/AWing/ArvelCrynyd.cs using Guid(fb32c861f3a66f441b88827f04cf272c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e38dac0b597a5948c9a3b5fcc5296b') in 0.020794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 453.359486 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/BobaFettEmpire.cs
+  artifactKey: Guid(bcc9093c5dd165e4395764bb52a01fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/BobaFettEmpire.cs using Guid(bcc9093c5dd165e4395764bb52a01fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d70bdef76bf837b2adc4ad60a09077f') in 0.024880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.915969 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/BobaFettScum.cs
+  artifactKey: Guid(75eb9a15e156df34f91428126821d4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/BobaFettScum.cs using Guid(75eb9a15e156df34f91428126821d4b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c46906c4b471d872e119d7a2ea009ccb') in 0.022072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.628670 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/BountyHunter.cs
+  artifactKey: Guid(547be92de70591649813e04b3ba1ad29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/BountyHunter.cs using Guid(547be92de70591649813e04b3ba1ad29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee35a93607ce65df582a7a512a0ce67') in 0.022003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.143720 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/EmonAzzameen.cs
+  artifactKey: Guid(af2d53ee4c8d995449938880067bb91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/EmonAzzameen.cs using Guid(af2d53ee4c8d995449938880067bb91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7889acfd8dc57f252ad5b64f8edad79') in 0.018849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.141647 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/KathScarletEmpire.cs
+  artifactKey: Guid(1d70ff94a403f194fbb1b3e0495c3300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/KathScarletEmpire.cs using Guid(1d70ff94a403f194fbb1b3e0495c3300) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b205267b23c2b1f9c5af93488ecad7ed') in 0.017237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.362105 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/KathScarletScum.cs
+  artifactKey: Guid(799d16a40e3c8a748b621e09a7838f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/KathScarletScum.cs using Guid(799d16a40e3c8a748b621e09a7838f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0026e2876c3dddc130d46569a34e57c') in 0.021525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.109628 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/KrassisTrelix.cs
+  artifactKey: Guid(3f1cdf42f477b814d9974faec7d54216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Firespray31/KrassisTrelix.cs using Guid(3f1cdf42f477b814d9974faec7d54216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34bc807ebc508a95a98434a413df6132') in 0.021370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.732497 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/RebelOperative.cs
+  artifactKey: Guid(53a57a3db3e823e4da1d5bde00be50d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/RebelOperative.cs using Guid(53a57a3db3e823e4da1d5bde00be50d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62aac893501205651c52d871ca8e5e69') in 0.022722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.082061 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/PalobGodalhi.cs
+  artifactKey: Guid(8c1db66b5e1be3a49a80bfbc75772f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/PalobGodalhi.cs using Guid(8c1db66b5e1be3a49a80bfbc75772f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c66e4c2ce5a03160a9109ea48e5ee0') in 0.023946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.039766 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/PalobGodalhi1.cs
+  artifactKey: Guid(cfec308e1c67ef84491b7d28a68d40a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/PalobGodalhi1.cs using Guid(cfec308e1c67ef84491b7d28a68d40a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a79213fe404972b2ad204c1e31914e8') in 0.022005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.689238 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/DaceBonearm.cs
+  artifactKey: Guid(cfec308e1c67ef84491b7d28a68d40a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/DaceBonearm.cs using Guid(cfec308e1c67ef84491b7d28a68d40a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214941fd95fd9cfcdf12fe101c5fb58c') in 0.021819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.498828 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/DaceBonearm1.cs
+  artifactKey: Guid(ed2033deb1d3f6e408e4ddec74eff20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/DaceBonearm1.cs using Guid(ed2033deb1d3f6e408e4ddec74eff20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2ece29136c56fd4d42e387819445df') in 0.020900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.171803 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/TokilMux.cs
+  artifactKey: Guid(ed2033deb1d3f6e408e4ddec74eff20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/Hwk290/TokilMux.cs using Guid(ed2033deb1d3f6e408e4ddec74eff20e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f4d85f7bddd32a2b5e24a4f940293c8') in 0.021330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.589193 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/TalonbaneCobra.cs
+  artifactKey: Guid(dce99d967a93b104dbe7dc0fcfdf4874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/TalonbaneCobra.cs using Guid(dce99d967a93b104dbe7dc0fcfdf4874) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6856568276f42f64a16c60dcaf44ea28') in 0.025744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.425741 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/TalonbaneCobra1.cs
+  artifactKey: Guid(24861eddc709bd44a892f33e07e21a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/TalonbaneCobra1.cs using Guid(24861eddc709bd44a892f33e07e21a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f678f3d0009ff20db3eb6c8a2d9d61') in 0.019995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.723141 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/CaptainJostero.cs
+  artifactKey: Guid(24861eddc709bd44a892f33e07e21a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/CaptainJostero.cs using Guid(24861eddc709bd44a892f33e07e21a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617fcf9731f1379c63a00b3a7da1a1dd') in 0.020570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.224519 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/CaptainJostero1.cs
+  artifactKey: Guid(ec8d25d140368f9458435d005ab8bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/CaptainJostero1.cs using Guid(ec8d25d140368f9458435d005ab8bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbbc826281bae333108d77c40b0aff1b') in 0.020667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.521509 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/ViktorHel.cs
+  artifactKey: Guid(ec8d25d140368f9458435d005ab8bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/KihraxzFighter/ViktorHel.cs using Guid(ec8d25d140368f9458435d005ab8bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7af0da0189b0b33687ffc2b7b5399d63') in 0.020161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.921143 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/KarthakkPirate.cs
+  artifactKey: Guid(c982a028f51f4894fa4400ff4cd30f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/KarthakkPirate.cs using Guid(c982a028f51f4894fa4400ff4cd30f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6f91e368f700c59228be2da7447089') in 0.032714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.070759 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/LokRevenant.cs
+  artifactKey: Guid(47e3f9792099c744fb16d0d45c05ffe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/LokRevenant.cs using Guid(47e3f9792099c744fb16d0d45c05ffe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc2a39232d9f84683fb9a051583fa7a') in 0.023184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.765032 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/SolSixxa.cs
+  artifactKey: Guid(0143f8061245eb148b62c63842e2b296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/SolSixxa.cs using Guid(0143f8061245eb148b62c63842e2b296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb494803cba54d531a5440c0da04bf13') in 0.024413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.649586 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/CaptainNymRebel.cs
+  artifactKey: Guid(70af7d1779ae11349ba6df9504c4a7ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/CaptainNymRebel.cs using Guid(70af7d1779ae11349ba6df9504c4a7ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a75dd23b421c3642db7cf9369b33db8') in 0.022466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.381987 seconds.
+  path: Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/CaptainNymScum.cs
+  artifactKey: Guid(f282f256181d0534190b1454ab14d98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Model/Content/FirstEdition/Pilots/ScurrgH6Bomber/CaptainNymScum.cs using Guid(f282f256181d0534190b1454ab14d98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3eb3e014312a92ac113ebc7be0324b0') in 0.020454 seconds 
